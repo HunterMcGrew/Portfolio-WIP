@@ -1,0 +1,76 @@
+/* Begin of stylesheet for portfolio */
+
+
+
+header {
+    height: 60px;
+}
+
+#projectsMain {
+    flex: 1;
+    padding: .75rem;
+}
+
+#projectOne {
+    background-image: url(../images/tech-blog.PNG);
+    min-width: 350px;
+    max-width: inherit;
+    min-height: 400px;
+    background-clip: content-box;
+    opacity: .8;
+    transition: .7s;
+}
+
+#projectOne:hover {
+    opacity: 1;
+}
+
+#projectTwo {
+    background-image: url(../images/weather_dashboard.PNG);
+    min-width: 350px;
+    max-width: 100%;
+    min-height: 400px;
+    background-clip: content-box;
+    opacity: .8;
+    transition: .7s;
+}
+
+#projectTwo:hover {
+    opacity: 1;
+}
+
+#projectThree {
+    background-image: url(../images/employee_tracker.PNG);
+    min-height: 350px;
+    background-clip: content-box;
+    opacity: .8;
+    transition: .7s;
+}
+
+#projectThree:hover {
+    opacity: 1;
+}
+
+#projectFour {
+    background-image: url(../images/social_network_api.PNG);
+    min-height: 350px;
+    background-clip: content-box;
+    opacity: .8;
+    transition: .7s;
+}
+
+#projectFour:hover {
+    opacity: 1;
+}
+
+#projectFive {
+    background-image: url(../images/work_day_scheduler.PNG);
+    min-height: 350px;
+    background-clip: content-box;
+    opacity: .8;
+    transition: .7s;
+}
+
+#projectFive:hover {
+    opacity: 1;
+}
