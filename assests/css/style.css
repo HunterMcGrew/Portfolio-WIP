@@ -6,6 +6,18 @@ header {
     height: 60px;
 }
 
+main {
+    margin-bottom: 2rem;
+}
+
+footer {
+    height: 75px;
+}
+
+.contactColumn {
+    padding: 0;
+}
+
 #projectsMain {
     flex: 1;
     padding: .75rem;
