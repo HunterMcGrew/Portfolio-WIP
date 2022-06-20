@@ -1,115 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/css/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assests/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assests/css/reset.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assests/css/style.css" />
     <title>Hunter McGrew</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Begin Header -->
     <header class="is-flex is-justify-content-space-between is-align-items-center">
+      <div class="ml-2">
+        <h2 class="title is-size-4">Hunter McGrew</h2>
+      </div>
 
-        <div class="ml-2">
-            <h2 class="title is-size-4">Hunter McGrew</h2>
+      <nav class="is-flex mr-4" id="navbar">
+        <a href="./index.html" class="navLink mr-4 ml-4">Home</a>
+        <a href="#projects" class="navLink mr-4 ml-4">Projects</a>
+        <a href="#contact" class="navLink mr-4 ml-4">Contact</a>
+        <a href="#contact" class="navLink mr-4 ml-4">Resume</a>
+
+      </nav>
+
+      <!-- The overlay -->
+      <div id="myNav" class="overlay" style="display: none">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
         </div>
-
-        <nav class="is-flex mr-4">
-            <a href="./index.html" class="navLink mr-4 ml-4">Home</a>
-            <a href="#projects" class="navLink mr-4 ml-4">Projects</a>
-            <a href="#contact" class="navLink mr-4 ml-4">Contact</a>
-            <a href="#contact" class="navLink mr-4 ml-4">Resume</a>
-        </nav>
+      </div>
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span class="mobileOnly material-symbols-outlined" style="display: none"  onclick="openNav()"></span>
 
     </header>
     <!-- End Header/Nav -->
 
     <main class="mt-6">
-        <!-- Custom Container if needed -->
-        <section class="myContainer mr-5 ml-5">
+      <!-- Custom Container if needed -->
+      <section class="myContainer mr-5 ml-5">
         <!-- About Section -->
-            <section class="columns">
+        <section class="columns">
+          <section class="column is-2 mr-2" id="about">
+            <h2 class="is-size-5 has-text-weight-bold has-text-centered">
+              &lt;AboutMe&sol;&gt;
+            </h2>
+          </section>
 
-                <section class="column is-2 mr-2" id="about">
-                    <h2 class="is-size-5 has-text-weight-bold has-text-centered">&lt;AboutMe&sol;&gt;</h2>
-                </section>
-
-                <section class="column is-10">
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus malesuada porta. Fusce placerat tellus vel metus pharetra mollis. Fusce lacus massa, mollis vel iaculis ac, malesuada sed ligula. Fusce sodales ornare nisl. Donec ex ipsum, tempus id ultricies sed, eleifend ut nisi. Sed laoreet dignissim auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc viverra iaculis varius. Nam vehicula justo id dictum molestie. Phasellus consectetur mollis ex. Curabitur dignissim fringilla nibh id ornare. Proin porttitor nec quam non luctus.</p>
-                </section>
-
-
-            </section>
+          <section class="column is-10">
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              cursus malesuada porta. Fusce placerat tellus vel metus pharetra
+              mollis. Fusce lacus massa, mollis vel iaculis ac, malesuada sed
+              ligula. Fusce sodales ornare nisl. Donec ex ipsum, tempus id
+              ultricies sed, eleifend ut nisi. Sed laoreet dignissim auctor.
+              Orci varius natoque penatibus et magnis dis parturient montes,
+              nascetur ridiculus mus. Nunc viverra iaculis varius. Nam vehicula
+              justo id dictum molestie. Phasellus consectetur mollis ex.
+              Curabitur dignissim fringilla nibh id ornare. Proin porttitor nec
+              quam non luctus.
+            </p>
+          </section>
+        </section>
         <!-- End About Section -->
         <!-- Project Section -->
-            <section class="columns mt-4" id="projects">
+        <section class="columns mt-4" id="projects">
+          <section class="column is-2 mr-2">
+            <h2 class="is-size-5 has-text-weight-bold has-text-centered">
+              &lt;MyProjects&sol;&gt;
+            </h2>
+          </section>
 
-                <section class="column is-2 mr-2">
-                    <h2 class="is-size-5 has-text-weight-bold has-text-centered">&lt;MyProjects&sol;&gt;</h2>
+          <section class="cloumn is-10" id="projectsMain">
+            <!-- Flex container for all projects -->
+            <section class="columns">
+              <!-- Project One -->
+              <section class="projectContainer column is-6" id="projectOne">
+                <section class="" id="">
+                  <h2 class="">Test</h2>
                 </section>
-
-                <section class="cloumn is-10" id="projectsMain">
-                    <!-- Flex container for all projects -->
-                    <section class="columns">
-                        <!-- Project One -->
-                        <section class="projectContainer column is-6 " id="projectOne">
-                            <section class="" id="">
-                                <h2 class="">Test</h2>
-                            </section>
-                        </section>
-                        <!-- Project Two -->
-                        <section class="projectContainer column is-6" id="projectTwo">
-
-                        </section>
-                    </section>
-                    <!-- Second Row -->
-                    <section class="columns">
-                        <!-- Project Three -->
-                        <section class="projectContainer column is-4" id="projectThree">
-
-                        </section>
-                        <!-- Project Four -->
-                        <section class="projectContainer column is-4" id="projectFour">
-
-                        </section>
-                        <!-- Project Five -->
-                        <section class="projectContainer column is-4" id="projectFive">
-
-                        </section>
-                    </section>
-                    <!-- End Second Row -->
-
-
-                </section>
-
+              </section>
+              <!-- Project Two -->
+              <section
+                class="projectContainer column is-6"
+                id="projectTwo"
+              ></section>
             </section>
-        <!-- End Project Section -->
-        <!-- Start Contact Section -->
-            <footer class="columns mt-4 is-align-items-center" id="contact">
-
-                <section class="column is-2 mr-2">
-                    <h2 class="is-size-5 has-text-weight-bold has-text-centered">&lt;ContactMe&sol;&gt;</h2>
-                </section>
-
-                <section class="column contactColumn is-10 is-flex is-justify-content-space-around">
-                    <a href="mailto:hunter109@gmail.com" class="contactLinks">Email</a>
-                    <a href="https://github.com/HunterMcGrew" class="contactLinks">GitHub</a>
-                    <a href="https://www.linkedin.com/in/hunter-mcgrew-5a126745/" class="contactLinks">LinkedIn</a>
-                    <a href="https://twitter.com/hunter109" class="contactLinks">Twitter</a>
-                </section>
-
-            </footer>
-        <!-- End Contact Section -->
-
+            <!-- Second Row -->
+            <section class="columns">
+              <!-- Project Three -->
+              <section
+                class="projectContainer column is-4"
+                id="projectThree"
+              ></section>
+              <!-- Project Four -->
+              <section
+                class="projectContainer column is-4"
+                id="projectFour"
+              ></section>
+              <!-- Project Five -->
+              <section
+                class="projectContainer column is-4"
+                id="projectFive"
+              ></section>
+            </section>
+            <!-- End Second Row -->
+          </section>
         </section>
-
+        <!-- End Project Section -->
+      </section>
     </main>
 
+    <!-- Start Contact Section -->
+    <footer class="columns mt-4 is-align-items-center mr-5 ml-5" id="contact">
+      <section class="column is-2 mr-2">
+        <h2 class="is-size-5 has-text-weight-bold has-text-centered">
+          &lt;ContactMe&sol;&gt;
+        </h2>
+      </section>
 
-    
-</body>
+      <section
+        class="column contactColumn is-10 is-flex is-justify-content-space-around"
+      >
+        <a href="mailto:hunter109@gmail.com" class="contactLinks">Email</a>
+        <a href="https://github.com/HunterMcGrew" class="contactLinks"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/hunter-mcgrew-5a126745/"
+          class="contactLinks"
+          >LinkedIn</a
+        >
+        <a href="https://twitter.com/hunter109" class="contactLinks">Twitter</a>
+      </section>
+    </footer>
+    <!-- End Contact Section -->
+  </body>
 </html>
