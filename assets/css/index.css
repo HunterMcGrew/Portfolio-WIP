@@ -277,9 +277,10 @@ header {
     font-size: 22px;
     height: inherit;
     position: relative;
-    top: -400px;
+    top: 0px;
     opacity: .85;
     transition: .5s ease;
+    z-index: 2;
 }
 
 .innerProjectLinks {
@@ -308,11 +309,16 @@ header {
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+    z-index: 1;
+    position: relative;
+    top: -400px;
 }
 
 #proj2, #proj9 {
     object-position: 0;
 }
+
+
 
 /* end of projects */
 
@@ -417,45 +423,86 @@ footer p {
         font-size: 22px;
         height: inherit;
         position: relative;
-        top: -400px;
+        top: 0px;
         opacity: 0;
         transition: .5s ease;
+    }
+
+    .projectImages {
+        position: relative;
+        top: -400px;
     }
 
     .innerProject1:hover {
         opacity: .9;
     }
+
+    .innerProject1:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject2:hover {
         opacity: .9;
+    }
+
+    .innerProject2:hover + .projectImages {
+        opacity: .525;
     }
     
     .innerProject3:hover {
         opacity: .9;
     }
+
+    .innerProject3:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject4:hover {
         opacity: .9;
+    }
+
+    .innerProject4:hover + .projectImages {
+        opacity: .525;
     }
     
     .innerProject5:hover {
         opacity: .9;
     }
+
+    .innerProject5:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject6:hover {
         opacity: .9;
+    }
+
+    .innerProject6:hover + .projectImages {
+        opacity: .525;
     }
     
     .innerProject7:hover {
         opacity: .9;
     }
+
+    .innerProject7:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject8:hover {
         opacity: .9;
     }
+
+    .innerProject8:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject9:hover {
         opacity: .9;
+    }
+
+    .innerProject9:hover + .projectImages {
+        opacity: .525;
     }
 
     .innerProjectLinks {
@@ -540,45 +587,86 @@ footer p {
         font-size: 22px;
         height: inherit;
         position: relative;
-        top: -400px;
+        top: 0px;
         opacity: 0;
         transition: .5s ease;
+    }
+
+    .projectImages {
+        position: relative;
+        top: -400px;
     }
 
     .innerProject1:hover {
         opacity: .9;
     }
+
+    .innerProject1:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject2:hover {
         opacity: .9;
+    }
+
+    .innerProject2:hover + .projectImages {
+        opacity: .525;
     }
     
     .innerProject3:hover {
         opacity: .9;
     }
+
+    .innerProject3:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject4:hover {
         opacity: .9;
+    }
+
+    .innerProject4:hover + .projectImages {
+        opacity: .525;
     }
     
     .innerProject5:hover {
         opacity: .9;
     }
+
+    .innerProject5:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject6:hover {
         opacity: .9;
+    }
+
+    .innerProject6:hover + .projectImages {
+        opacity: .525;
     }
     
     .innerProject7:hover {
         opacity: .9;
     }
+
+    .innerProject7:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject8:hover {
         opacity: .9;
     }
+
+    .innerProject8:hover + .projectImages {
+        opacity: .525;
+    }
     
     .innerProject9:hover {
         opacity: .9;
+    }
+
+    .innerProject9:hover + .projectImages {
+        opacity: .525;
     }
 
     .innerProjectLinks {
