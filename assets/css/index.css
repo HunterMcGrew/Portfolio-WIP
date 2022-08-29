@@ -312,6 +312,7 @@ header {
     z-index: 1;
     position: relative;
     top: -400px;
+    transition: .4s ease;
 }
 
 #proj2, #proj9 {
