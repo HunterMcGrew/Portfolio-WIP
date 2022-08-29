@@ -1,147 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assests/css/reset.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="./assests/css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunter McGrew</title>
-  </head>
-  <body>
-    <!-- Begin Header -->
-    <header class="is-flex is-justify-content-space-between is-align-items-center">
-      <div class="ml-2">
-        <h2 class="title is-size-4">Hunter McGrew</h2>
-      </div>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body class="light" id="body">
 
-      <nav class="is-flex mr-4" id="navbar">
-        <a href="./index.html" class="navLink mr-4 ml-4">Home</a>
-        <a href="#projects" class="navLink mr-4 ml-4">Projects</a>
-        <a href="#contact" class="navLink mr-4 ml-4">Contact</a>
-        <a href="./assests/Resume.pdf" class="navLink mr-4 ml-4">Resume</a>
+    <header class="row justify-content-between align-items-center g-0 light" id="home">
 
-      </nav>
+        <h2 class="logo col-6 p-0 m-0">hunter mcgrew</h2>
+        <div class="col-6 p-0 m-0 d-flex justify-content-end align-items-center" id="mobileOnly">
+            <p class="switcher material-symbols-outlined p-0 m-0" id="switch">nightlight</p>
+            <p class="toggle p-0 m-0 material-symbols-outlined" id="menu">menu</p>
+        </div>
+        
+        
+        <!-- Desktop NavMenu -->
+        <div class="col-6 col-lg-6 d-flex justify-content-end desktopNav">
+            <ul class="navList m-0 d-flex">
+                <li class="navLinks">
+                    <span class="switcher material-symbols-outlined p-0 m-0" id="switch2">nightlight</span>
+                </li>
+                <li class="navLinks">
+                    <a href="#">Back to Top</a>
+                </li>
+                <li class="navLinks">
+                    <a href="#projectSection">Projects</a>
+                </li>
+                <li class="navLinks">
+                    <a class="resumeNavLink" href="#resume">Resume</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Desktop NavMenu -->
 
-    <!-- Use any element to open/show the overlay navigation menu -->
-    <span class="mobileOnly material-symbols-rounded" style="display: none"  onclick="openNav()">menu</span>
+        <!-- Mobile NavMenu -->
+        <div class="mobileNav justify-content-center align-items-center" id="mobileMenu">
+            <ul class="navList">
+                <li class="mobileLinks">
+                    <a class="closeOnClick" href="#">Back to Top</a>
+                </li>
+                <li class="mobileLinks">
+                    <a class="closeOnClick" href="#projectSection">Projects</a>
+                </li>
+                <li class="mobileLinks">
+                    <a class="closeOnClick resumeNavLink" href="#resume">Resume</a>
+                </li>
+                <li class="mobileLinks">
+                    <a class="closeOnClick" href="https://github.com/HunterMcGrew">GitHub</a>
+                </li>
+                <li class="mobileLinks">
+                    <a class="closeOnClick resumeNavLink" href="https://www.linkedin.com/in/huntermcgrew/">LinkedIn</a>
+                </li>
+            </ul>
+            <span class="close" id="closeToggle">&times;</span>
+        </div>
+        
+        <!-- End Mobile NavMenu -->
 
-      
     </header>
-    <!-- End Header/Nav -->
 
-    <!-- The overlay -->
-    <div id="myNav" class="overlay">
-      <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a>
 
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <a href="./index.html" class="navLink mr-4 ml-4" onclick="closeNav()">Home</a>
-        <a href="#projects" class="navLink mr-4 ml-4" onclick="closeNav()">Projects</a>
-        <a href="#contact" class="navLink mr-4 ml-4" onclick="closeNav()">Contact</a>
-        <a href="#contact" class="navLink mr-4 ml-4" onclick="closeNav()">Resume</a>
-      </div>
+
+    <!-- About Me -->
+    <section class="row g-0" id="about">
+
+        <div class="col-12">
+            <p class="aboutTxt">
+                Hello, <br/> 
+                I'm <span class="myName">Hunter McGrew</span> <br/>
+                A curious full stack developer. <br/>
+                I like building things. 
+            </p>
+        </div>         
+
+    </section>
+
+    <!-- Social Links -->
+    <section class="row g-0" id="social">
+
+        <div class="col-12">
+            <ul class="socials list-inline">
+                <li class="socialLinks list-inline-item">
+                    <a href="https://github.com/HunterMcGrew" target="_blank">
+                        GitHub
+                    </a>
+                </li>
+                <li class="socialLinks list-inline-item">
+                    <a href="https://www.linkedin.com/in/huntermcgrew/" target="_blank">
+                        LinkedIn
+                    </a>
+                </li>
+                <li class="socialLinks list-inline-item">
+                    <a href="mailto:hunter109@gmail.com" target="_blank">
+                        Email
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section class="row g-0 projectsContainer justify-content-between" id="projectSection">
+
+        <h2 class="proj-title">&lt; Projects &sol;&gt;</h2>
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project1">
+            <img class="projectImages" src="./assets/images/projects/weather-dashboard.PNG" alt="screenshot of a weather website">
+            <div class="innerProject1 innerProject">
+                <p class="innerProjectLinks shadows shadows"><a href="https://github.com/HunterMcGrew/W-R" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows shadows"><a href="https://huntermcgrew.github.io/W-R/" target="_blank">Live</a></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project2">
+            <img class="projectImages" id="proj2" src="./assets/images/projects/tech-blog.PNG" alt="screenshot of a tech blog website">
+            <div class="innerProject2 innerProject">
+                <p class="innerProjectLinks shadows"><a href="https://github.com/HunterMcGrew/Tech-Blog" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows"><a href="https://cryptic-shore-90802.herokuapp.com/" target="_blank">Live</a></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project3">
+            <img class="projectImages" src="./assets/images/projects/social-network-api.PNG" alt="screenshot of a coding language typed out">
+            <div class="innerProject3 innerProject">
+                <p class="innerProjectLinks shadows"><a href="https://github.com/HunterMcGrew/Social-Network-API" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows"><a href="https://youtu.be/7H3X_x5oiWY" target="_blank">Demo</a></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project4">
+            <img class="projectImages" src="./assets/images/projects/zoominlife.PNG" alt="screenshot of a website with a weather widget, map widget, and images of t-shirts.">
+            <div class="innerProject4 innerProject">
+                <p class="innerProjectLinks shadows"><a href="https://github.com/HunterMcGrew/ZoominLife" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows"><a href="https://huntermcgrew.github.io/ZoominLife/" target="_blank">Live</a></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project5">
+            <img class="projectImages" src="./assets/images/projects/profile-card.PNG" alt="screenshot of a a fake person profile information from a social media website">
+            <div class="innerProject5 innerProject">
+                <p class="innerProjectLinks shadows"><a href="https://github.com/HunterMcGrew/profile-card-component" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows"><a href="https://huntermcgrew.github.io/profile-card-component/" target="_blank">Live</a></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project6">
+            <img class="projectImages" src="./assets/images/projects/advice-generator.PNG" alt="screenshot of a website that gives you random advice for fun">
+            <div class="innerProject6 innerProject">
+                <p class="innerProjectLinks shadows"><a href="https://github.com/HunterMcGrew/Advice-Generator" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows"><a href="https://huntermcgrew.github.io/Advice-Generator/" target="_blank">Live</a></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project7">
+            <img class="projectImages" src="./assets/images/projects/article-preview-component.PNG" alt="screenshot of a preview of a fake article including title and brief description">
+            <div class="innerProject7 innerProject">
+                <p class="innerProjectLinks shadows"><a href="https://github.com/HunterMcGrew/article-preview-component" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows"><a href="https://huntermcgrew.github.io/article-preview-component/" target="_blank">Live</a></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project8">
+            <img class="projectImages" src="./assets/images/projects/e-commerce-backend.PNG" alt="screenshot of a coding language typed out">
+            <div class="innerProject8 innerProject">
+                <p class="innerProjectLinks shadows"><a href="https://github.com/HunterMcGrew/E-Commerce-Back-End" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows"><a href="https://youtu.be/Z-iwm3d7E1Y" target="_blank">Demo</a></p>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6 col-xl-4 projects shadows " id="project9">
+            <img class="projectImages" id="proj9" src="./assets/images/projects/note_taker2.PNG" alt="screenshot of a note taker website">
+            <div class="innerProject9 innerProject">
+                <p class="innerProjectLinks shadows"><a href="https://github.com/HunterMcGrew/11-HW-Note-Taker" target="_blank">GitHub</a></p>
+                <br>
+                <p class="innerProjectLinks shadows"><a href="https://warm-woodland-91540.herokuapp.com/index.html" target="_blank">Demo</a></p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="row">
+        <section class="col-12 col-lg-12 d-flex justify-content-center" id="resume">
+            <p class="socialLinks" id="resBtn"><a href="./assets/Resume.pdf" target="_blank">My Resume</a></a></p>
+        </section>
     </div>
 
-    <main class="mt-6">
-      <!-- Custom Container if needed -->
-      <section class="myContainer mr-5 ml-5">
-        <!-- About Section -->
-        <section class="columns">
-          <section class="column is-2 mr-2" id="about">
-            <h2 class="is-size-5 has-text-weight-bold has-text-centered">
-              &lt;AboutMe&sol;&gt;
-            </h2>
-          </section>
-
-          <section class="column is-10">
-            <p class="">
-              Full stack developer with a certificate in full stack development using the MERN stack from UT Austin coding bootcamp. Ready to use my new skills in CSS, JavaScript, Node, and React to create and/or optimize projects with a focus on mobile-first design and development. I’ve worked in small teams to develop a few projects and can’t wait to get into the field and start working with a team to build better web experiences.
-            </p>
-          </section>
-        </section>
-        <!-- End About Section -->
-        <!-- Project Section -->
-        <section class="columns mt-4" id="projects">
-          <section class="column is-2 mr-2">
-            <h2 class="is-size-5 has-text-weight-bold has-text-centered">
-              &lt;MyProjects&sol;&gt;
-            </h2>
-          </section>
-
-          <section class="cloumn is-10" id="projectsMain">
-            <!-- Flex container for all projects -->
-            <section class="columns">
-              <!-- Project One -->
-              <section class="projectContainer column is-6" id="projectOne">
-                <section class="" id="">
-                  <h2 class="">Test</h2>
-                </section>
-              </section>
-              <!-- Project Two -->
-              <section
-                class="projectContainer column is-6"
-                id="projectTwo"
-              ></section>
-            </section>
-            <!-- Second Row -->
-            <section class="columns">
-              <!-- Project Three -->
-              <section
-                class="projectContainer column is-4"
-                id="projectThree"
-              ></section>
-              <!-- Project Four -->
-              <section
-                class="projectContainer column is-4"
-                id="projectFour"
-              ></section>
-              <!-- Project Five -->
-              <section
-                class="projectContainer column is-4"
-                id="projectFive"
-              ></section>
-            </section>
-            <!-- End Second Row -->
-          </section>
-        </section>
-        <!-- End Project Section -->
-      </section>
-    </main>
-
-    <!-- Start Contact Section -->
-    <footer class="columns mt-4 is-align-items-center mr-5 ml-5 mb-5" id="contact">
-      <section class="column is-2 mr-2">
-        <h2 class="is-size-5 has-text-weight-bold has-text-centered">
-          &lt;ContactMe&sol;&gt;
-        </h2>
-      </section>
-
-      <section
-        class="column contactColumn is-10 is-flex is-justify-content-space-around"
-      >
-        <a href="mailto:hunter109@gmail.com" class="contactLinks">Email</a>
-        <a href="https://github.com/HunterMcGrew" class="contactLinks"
-          >GitHub</a
-        >
-        <a
-          href="https://www.linkedin.com/in/huntermcgrew/"
-          class="contactLinks"
-          >LinkedIn</a
-        >
-        <a href="https://twitter.com/hunter109" class="contactLinks">Twitter</a>
-      </section>
+    <footer>
+        <p>
+            Hunter McGrew 2022
+        </p>
     </footer>
-    <!-- End Contact Section -->
 
-    <script src="./assests/js/script.js"></script>
+    
+    <script src="./assets/js/script.js"></script>
 
-  </body>
+</body>
 </html>

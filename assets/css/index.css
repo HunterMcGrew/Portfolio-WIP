@@ -1,0 +1,599 @@
+/* start of code */
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --dark-bg: #181717;
+    --dark-fc: #CCC5B9;
+    --orange: #EB5E28;
+    /* light mode */
+    --light-bg: #FFFCF2;
+    --light-fc: #403D39;
+}
+
+body {
+    /* padding: 10px 5%; */
+    font-family: 'Exo', sans-serif;
+    transition: .3s ease;
+}
+
+.light {
+    background-color: var(--light-bg);
+    color: var(--light-fc);
+}
+
+.dark {
+    background-color: var(--dark-bg);
+    color: var(--dark-fc);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navBar / Header */
+
+header {
+    padding: 0px 5%;
+    height: 80px;
+    position: sticky;
+    top: 0 !important;
+    z-index: 101;
+    transition: .3s ease;
+}
+
+.desktopNav {
+    display: none !important;
+}
+
+.mobileNav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .85);
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transform: translateY(-100%);
+    /* transition: all .5s; */
+}
+
+.slideIn {
+    transform: translateY(0%);
+    transition: .5s ease;
+}
+
+.slideOut {
+    transform: translateY(-100%);
+    transition: .5s ease;
+}
+
+.navList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navLinks {
+    text-align: end;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.navLinksDark {
+    text-align: end;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.mobileLinks {
+    margin: 10px 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.mobileLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navLinks a {
+    color: var(--light-fc);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+
+.navLinksDark a {
+    color: var(--dark-fc);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px;
+    text-align: end;
+}
+
+.navLinks a:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.navLinksDark a:hover {
+    color: white;
+    font-weight: 700;
+}
+
+.logo {
+    display: inline;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.toggle {
+    display: inline;
+    text-align: right;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.close {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    cursor: pointer;
+}
+
+.switcher {
+    margin-right: 20px !important;
+    cursor: pointer;
+    font-variation-settings: 
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.switched {
+    font-variation-settings: 
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* end of navBar / Header */
+
+#about {
+    padding: 10px 5%;
+    width: 85%;
+    margin: 25px 20px 0px 20px;
+}
+
+.aboutTxt {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.socials {
+    padding: 10px 5%;
+    margin: 5px 0px 25px 15px;
+}
+
+.socialLinks {
+    height: 50px;
+    width: 95px;
+    background-color: var(--light-bg);
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: 0.5s ease;
+}
+
+.socialLinksDark {
+    height: 50px;
+    width: 95px;
+    background-color: var(--dark-bg);
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: 0.5s ease;
+}
+
+.socialLinks a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    color: var(--light-fc);
+    transition: .5s ease;
+}
+
+.socialLinksDark a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    color: var(--dark-fc);
+    transition: .5s ease;
+}
+
+.socialLinks a:hover {
+    color: white;
+}
+
+.socialLinksDark a:hover {
+    color: white;
+}
+
+.socialLinks:hover {
+    font-weight: 700;
+    box-shadow: inset 0 -4.6rem var(--dark-bg);
+}
+
+.socialLinksDark:hover {
+    font-weight: 700;
+    box-shadow: inset 0 -4.6rem var(--light-fc);
+}
+
+/* Projects */
+
+#projectSection {
+    padding: 10px 5%;
+}
+
+.proj-title {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.projects {
+    margin: 0px 0px 35px 0px;
+    border-radius: 10px;
+    object-fit: cover;
+    vertical-align: center;
+    transition: all .3s ease;
+    min-width: 325px;
+    max-width: 800px;
+    height: 400px;
+}
+
+.innerProject {
+    display: block;
+    font-size: 22px;
+    height: inherit;
+    position: relative;
+    top: -400px;
+    opacity: .85;
+    transition: .5s ease;
+}
+
+.innerProjectLinks {
+    background-color: rgba(0, 0, 0, .95);
+    padding: 10px;
+    width: 125px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 140px;
+    border-radius: 10px
+}
+
+.innerProjectLinks:hover {
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.innerProjectLinks a {
+    color: white;
+    opacity: 1;
+}
+
+.projectImages {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#proj2, #proj9 {
+    object-position: 0;
+}
+
+/* end of projects */
+
+.shadows {
+    /* box-shadow: 3px 3px 15px 3px rgb(0, 0, 0, .2); */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px,
+                rgba(0, 0, 0, 0.15) 2px 4px 24px,
+                rgba(0, 0, 0, 0.15) 6px 8px 32px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    padding: 10px 5%;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+/* End Projects */
+
+/* Resume */
+
+#resume {
+    margin: 25px 0px;
+}
+
+#resBtn {
+    font-size: 24px;
+    width: 175px;
+    height: 60px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 992px) {
+    #mobileOnly {
+        display: none !important;
+    }
+
+    .desktopNav {
+        display: flex !important;
+    }
+
+    #about {
+        width: 85%;
+        margin: 25px 20px 0px 20px;
+    }
+    
+    .aboutTxt {
+        font-size: 48px;
+        font-weight: 600;
+    }
+    
+    .socials {
+        margin: 10px 0px 20px 20px;
+       
+    }
+    
+    .socialLinks {
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        padding: 0;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: var(--light-bg);
+    }
+
+    .socialLinksDark {
+        height: 50px;
+        width: 100px;
+        background-color: var(--dark-bg);
+        text-align: center;
+        padding: 0;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 7px;
+    }
+    
+    .socialLinks a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        color: var(--light-fc);
+    }
+    
+    .projects {
+        width: 48%;
+    }
+
+    .innerProject {
+        display: block;
+        font-size: 22px;
+        height: inherit;
+        position: relative;
+        top: -400px;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    .innerProject1:hover {
+        opacity: .9;
+    }
+    
+    .innerProject2:hover {
+        opacity: .9;
+    }
+    
+    .innerProject3:hover {
+        opacity: .9;
+    }
+    
+    .innerProject4:hover {
+        opacity: .9;
+    }
+    
+    .innerProject5:hover {
+        opacity: .9;
+    }
+    
+    .innerProject6:hover {
+        opacity: .9;
+    }
+    
+    .innerProject7:hover {
+        opacity: .9;
+    }
+    
+    .innerProject8:hover {
+        opacity: .9;
+    }
+    
+    .innerProject9:hover {
+        opacity: .9;
+    }
+
+    .innerProjectLinks {
+        background-color: rgba(0, 0, 0, .95);
+        padding: 10px;
+        width: 125px;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        top: 140px;
+        border-radius: 10px;
+    }
+
+    .innerProjectLinks a {
+        color: white;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #mobileOnly {
+        display: none !important;
+    }
+
+    .desktopNav {
+        display: flex !important;
+    }
+
+    #about {
+        width: 85%;
+        margin: 25px 20px 0px 20px;
+    }
+    
+    .aboutTxt {
+        font-size: 48px;
+        font-weight: 600;
+    }
+    
+    .socials {
+        margin: 10px 0px 20px 20px;
+       
+    }
+
+    .socialLinks {
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        padding: 0;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: var(--light-bg);
+    }
+
+    .socialLinksDark {
+        height: 50px;
+        width: 100px;
+        background-color: var(--dark-bg);
+        text-align: center;
+        padding: 0;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 7px;
+    }
+    
+    .socialLinks a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: inherit;
+        color: var(--light-fc);
+    }
+
+    .projects {
+        width: 30%;
+    }
+
+    .innerProject {
+        display: block;
+        font-size: 22px;
+        height: inherit;
+        position: relative;
+        top: -400px;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    .innerProject1:hover {
+        opacity: .9;
+    }
+    
+    .innerProject2:hover {
+        opacity: .9;
+    }
+    
+    .innerProject3:hover {
+        opacity: .9;
+    }
+    
+    .innerProject4:hover {
+        opacity: .9;
+    }
+    
+    .innerProject5:hover {
+        opacity: .9;
+    }
+    
+    .innerProject6:hover {
+        opacity: .9;
+    }
+    
+    .innerProject7:hover {
+        opacity: .9;
+    }
+    
+    .innerProject8:hover {
+        opacity: .9;
+    }
+    
+    .innerProject9:hover {
+        opacity: .9;
+    }
+
+    .innerProjectLinks {
+        background-color: rgba(0, 0, 0, .95);
+        padding: 10px;
+        width: 125px;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        top: 140px;
+        border-radius: 10px;
+    }
+
+    .innerProjectLinks a {
+        color: white;
+        opacity: 1;
+    }
+}
