@@ -22,7 +22,7 @@ resumeNavLink.forEach(item => {
     function resumeDelay() {
         setTimeout(() => {
             window.open("https://huntermcgrew.github.io/Portfolio-WIP/assets/Resume.pdf");
-    }, 1000)
+    }, 800)
     }
 })
 
