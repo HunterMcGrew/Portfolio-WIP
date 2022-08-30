@@ -689,3 +689,15 @@ footer p {
         opacity: 1;
     }
 }
+
+@media (orientation: portrait) {
+    body {
+        height: calc(100% - 50px);
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        height: calc(100% - 50px);
+    }
+}
