@@ -336,6 +336,7 @@ footer {
     align-items: center;
     height: 75px;
     padding: 0px 5%;
+    margin-bottom: -50px;
 }
 
 footer p {
@@ -687,17 +688,5 @@ footer p {
     .innerProjectLinks a {
         color: white;
         opacity: 1;
-    }
-}
-
-@media (orientation: portrait) {
-    body {
-        height: calc(100% - 50px);
-    }
-}
-
-@media (orientation: landscape) {
-    body {
-        height: calc(100% - 50px);
     }
 }
