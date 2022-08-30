@@ -15,7 +15,6 @@ body {
     /* padding: 10px 5%; */
     font-family: 'Exo', sans-serif;
     transition: .3s ease;
-    height: 100vh;
 }
 
 .light {
@@ -338,7 +337,7 @@ footer {
     display: flex;
     align-items: center;
     height: 75px;
-    padding: 10px 5%;
+    padding: 0px 5%;
 }
 
 footer p {
