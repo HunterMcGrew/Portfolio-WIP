@@ -313,6 +313,8 @@ header {
     position: relative;
     top: -400px;
     transition: .4s ease;
+    /* erases empty whitespace from relative positioning */
+    margin-bottom: -400px;
 }
 
 #proj2, #proj9 {
