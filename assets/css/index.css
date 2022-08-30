@@ -311,10 +311,11 @@ header {
     object-fit: cover;
     z-index: 1;
     position: relative;
-    top: -400px;
+    top: -413px;
     transition: .4s ease;
     /* erases empty whitespace from relative positioning */
     margin-bottom: -400px;
+    overflow: hidden;
 }
 
 #proj2, #proj9 {
@@ -433,7 +434,8 @@ footer p {
 
     .projectImages {
         position: relative;
-        top: -400px;
+        top: -413px;
+        margin-bottom: -400px;
     }
 
     .innerProject1:hover {
@@ -597,7 +599,8 @@ footer p {
 
     .projectImages {
         position: relative;
-        top: -400px;
+        top: -413px;
+        margin-bottom: -400px;
     }
 
     .innerProject1:hover {
