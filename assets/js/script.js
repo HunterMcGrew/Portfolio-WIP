@@ -11,8 +11,8 @@ const switcher2 = document.getElementById("switch2");
 const bodyBG = document.getElementById("body");
 const header = document.getElementById("home");
 const mobileCloseClick = document.querySelectorAll(".closeOnClick"); 
-let navLinks = document.querySelectorAll(".navLinks");
-let socialLinks = document.querySelectorAll(".socialLinks");
+let navLinks = document.querySelectorAll(".navLinksDark");
+let socialLinks = document.querySelectorAll(".socialLinksDark");
 
 // After clicking desktopNav resume link, after scroll down (1 second) it opens
 // resume in new tab
@@ -58,7 +58,7 @@ mobileCloseClick.forEach(link => {
 
 
 // Functions for light and dark mode
-let lightMode = true;
+let lightMode = false;
 
 // Depending on light or dark mode, it sets the approriate variable for navLinks
 const checkNav = () => {
@@ -110,6 +110,7 @@ switcher.addEventListener("click", () => {
         header.classList.add("light");
         checkNav();
         navLinks.forEach(item => {
+    
             item.classList.remove("navLinksDark");
             item.classList.add("navLinks");
     })
@@ -117,6 +118,7 @@ switcher.addEventListener("click", () => {
         switcher2.classList.remove("switched");
         checkSocial();
         socialLinks.forEach(link => {
+    
             link.classList.remove("socialLinksDark");
             link.classList.add("socialLinks");
         })
