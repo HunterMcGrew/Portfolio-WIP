@@ -21,7 +21,7 @@ resumeNavLink.forEach(item => {
     item.addEventListener("click", resumeDelay);
     function resumeDelay() {
         setTimeout(() => {
-            window.open("https://huntermcgrew.github.io/Portfolio-WIP/assets/Resume.pdf");
+            window.open("https://github.com/HunterMcGrew/Portfolio-WIP/assets/Hunter_McGrew_Resume.pdf");
     }, 800)
     }
 })
